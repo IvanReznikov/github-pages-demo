@@ -10,7 +10,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/font-awesome.min.css"
+      href="maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
     />
     <title>realtdubai - Coming Soon</title>
     <style>
@@ -55,18 +55,17 @@
         border-radius: 5px;
       }
       .image-container img {
-        width: 400px;
+        width: 100%;
         border-radius: 10px;
       }
       .image-container figcaption {
       }
 
-      @media screen and (max-width: 400) {
-        .image-container img {
-          width: 100%;
-          border-radius: 10px;
+      @media screen and (max-width: 600px) {
+            .image-container figure {
+                margin: 0 5px;
+            }
         }
-      }
       .contact-info {
         text-align: center;
         margin: 0;
@@ -102,19 +101,19 @@
     <div class="image-section">
       <div><h2></h2></div>
       <div class="image-container">
-        <figure>
+        <figure class="expandable">
           <img
             src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case1.png"
           />
           <figcaption class="image-title">Noise Map</figcaption>
         </figure>
-        <figure>
+        <figure class="expandable">
           <img
             src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case2.png"
           />
           <figcaption class="image-title">Bike-friendly Map</figcaption>
         </figure>
-        <figure>
+        <figure class="expandable">
           <img
             src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case3.png"
           />
@@ -132,5 +131,14 @@
         <a href="tel:+971561514416">(+971)56-151-44-16</a>
       </div>
     </div>
+    <script>
+      const expandableImages = document.querySelectorAll('.expandable');
+
+      expandableImages.forEach(image => {
+          image.addEventListener('click', () => {
+              image.classList.toggle('expanded');
+          });
+      });
+  </script>
   </body>
 </html>
