@@ -14,23 +14,30 @@
         background-image: url("https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/bkg.jpeg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
         font-family: Arial, sans-serif;
         text-align: center;
         margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
       }
-      .welcome-section {
+      .welcome-section,
+      .subscribe-section {
         background-color: rgba(255, 255, 255, 0.8);
         padding: 20px;
         border-radius: 10px;
-        margin: 0 auto;
         max-width: 600px;
         margin-bottom: 30px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .image-section {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
+        flex: 1;
       }
       .image-container {
         display: flex;
@@ -44,12 +51,15 @@
         width: 100%;
         border-radius: 10px;
       }
-      .subscribe-section {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        margin: 0 auto;
-        max-width: 600px;
+      .contact-info {
+        text-align: center;
+        margin: 0;
+      }
+      .contact-info p {
+        margin: 5px;
+      }
+      .contact-info i {
+        margin-right: 10px;
       }
       h1,
       h2,
@@ -61,38 +71,16 @@
         font-size: 1.2em;
         margin-bottom: 10px;
       }
-      input[type="email"] {
-        padding: 10px;
-        width: 250px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1em;
-        margin-right: 10px;
-      }
-      .subscribe-button {
-        padding: 10px 20px;
-        border: none;
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 5px;
-        font-size: 1em;
-        cursor: pointer;
-      }
-      .subscribe-button:hover {
-        background-color: #0056b3;
-      }
-      .contact-info {
-        text-align: left;
-        margin-top: 10px;
-      }
     </style>
   </head>
 
   <body>
     <div class="welcome-section">
       <h1>Welcome to realtdubai!</h1>
-      <p>We're a startup that has invented new ways to use real estate data.</p>
-      <p>Stay tuned for exciting updates!</p>
+      <p>
+        Coming soon! We're a startup that has invented new ways to use real
+        estate data.
+      </p>
     </div>
 
     <div class="image-section">
@@ -119,19 +107,10 @@
     </div>
 
     <div class="subscribe-section">
-      <h2>Get Notified for Updates</h2>
-      <form
-        action="mailto:ivan@realtdubai.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <input type="submit" class="subscribe-button" value="Get Notified" />
-      </form>
-
       <div class="contact-info">
-        <h3>Contact us:</h3>
-        <p>Email: ivan@realtdubai.com</p>
-        <p>Phone: (+971)56-151-44-16</p>
+        <i class="fa fa-envelope"></i> ivan@realtdubai.com
+        <br />
+        <i class="fa fa-phone"></i> (+971)56-151-44-16
       </div>
     </div>
   </body>
