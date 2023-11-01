@@ -1,97 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/favicon.ico"
+      type="image/x-icon"
+    />
     <title>realtdubai - Coming Soon</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/favicon.ico" type="image/x-icon">
     <style>
-        body {
-            background-image: url('https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/bkg.jpeg');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        .content {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        input[type="email"] {
-            padding: 10px;
-            width: 250px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-        .image-container img {
-            width: 30%;
-            border-radius: 10px;
-        }
-        .contact-info {
-            text-align: left;
-            margin-top: 30px;
-        }
+      body {
+        background-image: url("https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/bkg.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .welcome-section {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 600px;
+        margin-bottom: 30px;
+      }
+      .image-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      .image-container figure {
+        margin: 0 10px;
+      }
+      .image-container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .subscribe-section {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      input[type="email"] {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        margin-right: 10px;
+      }
+      .subscribe-button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      .subscribe-button:hover {
+        background-color: #0056b3;
+      }
+      .contact-info {
+        text-align: left;
+        margin-top: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="content">
-        <h1>Welcome to realtdubai!</h1>
-        <p>We're a startup that has invented new ways to use real estate data.</p>
-        <p>Stay tuned for exciting updates!</p>
-
-        <div class="image-container">
-            <figure>
-                <img src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case1.png">
-                <figcaption class="image-title">Noise Map</figcaption>
-            </figure>
-            <figure>
-                <img src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case2.png">
-                <figcaption class="image-title">Bike-friendly Map</figcaption>
-            </figure>
-            <figure>
-                <img src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case3.png">
-                <figcaption class="image-title">Dog-friendly Map</figcaption>
-            </figure>
-        </div>
-
-        <a href="mailto:ivan@realtdubai.com?subject=Subscribe%20to%20realtdubai&body=Please%20add%20me%20to%20the%20mailing%20list%20for%20realtdubai."
-            class="notify-button">Get Notified</a>
-
-        <div class="contact-info">
-            <p>Contact us:</p>
-            <p>Email: ivan@realtdubai.com</p>
-            <p>Phone: (+971)56-151-44-16</p>
-        </div>
+  <body>
+    <div class="welcome-section">
+      <h1>Welcome to realtdubai!</h1>
+      <p>We're a startup that has invented new ways to use real estate data.</p>
+      <p>Stay tuned for exciting updates!</p>
     </div>
-</body>
 
+    <div class="image-section">
+      <div class="image-container">
+        <figure>
+          <img
+            src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case1.png"
+          />
+          <figcaption class="image-title">Noise Map</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case2.png"
+          />
+          <figcaption class="image-title">Bike-friendly Map</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/case3.png"
+          />
+          <figcaption class="image-title">Dog-friendly Map</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="subscribe-section">
+      <h2>Get Notified for Updates</h2>
+      <form
+        action="mailto:ivan@realtdubai.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <input type="submit" class="subscribe-button" value="Get Notified" />
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact us:</h3>
+        <p>Email: ivan@realtdubai.com</p>
+        <p>Phone: (+971)56-151-44-16</p>
+      </div>
+    </div>
+  </body>
 </html>
