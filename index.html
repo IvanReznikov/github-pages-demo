@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>realtDubai - Coming Soon</title>
+    <title>realtdubai - Coming Soon</title>
     <style>
         body {
+            background-image: url('path_to_your_image.jpg'); 
+            background-size: cover;
+            background-position: center;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
-            background: url('https://github.com/IvanReznikov/github-pages-demo/raw/3268f52f9823a7c02ba90f892618bcb97021af97/media/dubai_-_31956%20(1080p).mp4') center center fixed;
-            background-size: cover;
+            margin: 50px;
         }
         .content {
-            background: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.7); 
             padding: 20px;
             border-radius: 10px;
-            margin: 50px;
+            margin: 0 auto;
+            max-width: 600px;
         }
         h1 {
             font-size: 2em;
@@ -52,7 +54,11 @@
         <p>We're a startup that has invented new ways to use real estate data.</p>
         <p>Stay tuned for exciting updates!</p>
 
-        <a href="mailto:ivan@realtdubai.com?subject=Subscribe%20to%20realtdubai&body=Please%20add%20me%20to%20the%20mailing%20list%20for%20realtdubai.">Subscribe</a>
+        <form action="mailto:ivan@realtdubai.com" method="post" enctype="text/plain">
+            <label for="email">Get notified:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Subscribe">
+        </form>
 
         <p>Contact us:</p>
         <p>Email: ivan@realtdubai.com</p>
