@@ -8,6 +8,10 @@
       href="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/media/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://raw.githubusercontent.com/IvanReznikov/github-pages-demo/main/font-awesome.css"
+    />
     <title>realtdubai - Coming Soon</title>
     <style>
       body {
@@ -41,15 +45,22 @@
       }
       .image-container {
         display: flex;
+        align-items: flex-end;
+        background-color: rgba(255, 255, 255, 0.8);
       }
       .image-container figure {
         margin: 0 10px;
-        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 5px;
       }
       .image-container img {
-        width: 100%;
+        width: 400px;
         border-radius: 10px;
+      }
+      @media screen and (max-width: 600) {
+        .image-container img {
+          max-width: 75%;
+          border-radius: 10px;
+        }
       }
       .contact-info {
         text-align: center;
@@ -84,6 +95,7 @@
     </div>
 
     <div class="image-section">
+      <h2>Some of Our Data Maps</h2>
       <div class="image-container">
         <figure>
           <img
@@ -108,9 +120,11 @@
 
     <div class="subscribe-section">
       <div class="contact-info">
-        <i class="fa fa-envelope"></i> ivan@realtdubai.com
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:ivan@realtdubai.com">ivan@realtdubai.com</a>
         <br />
-        <i class="fa fa-phone"></i> (+971)56-151-44-16
+        <i class="fa fa-phone"></i>
+        <a href="tel:+971561514416">(+971)56-151-44-16</a>
       </div>
     </div>
   </body>
