@@ -10,7 +10,7 @@
     />
     <link
       rel="stylesheet"
-      href="maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
     />
     <title>realtdubai - Coming Soon</title>
     <style>
@@ -46,7 +46,7 @@
       }
       .image-container {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         background-color: rgba(255, 255, 255, 0.7);
         border-radius: 10px;
       }
@@ -86,6 +86,11 @@
         font-size: 1.2em;
         margin-bottom: 10px;
       }
+      .expanded img {
+            max-width: none;
+            width: 100%;
+            height: auto;
+        }
     </style>
   </head>
 
@@ -132,11 +137,13 @@
       </div>
     </div>
     <script>
-      const expandableImages = document.querySelectorAll('.expandable');
+      document.addEventListener('DOMContentLoaded', function() {
+          const expandableImages = document.querySelectorAll('.expandable');
 
-      expandableImages.forEach(image => {
-          image.addEventListener('click', () => {
-              image.classList.toggle('expanded');
+          expandableImages.forEach(image => {
+              image.addEventListener('click', () => {
+                  image.classList.toggle('expanded');
+              });
           });
       });
   </script>
